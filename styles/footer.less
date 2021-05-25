@@ -1,0 +1,42 @@
+@import './structure.less';
+
+footer {
+	padding: 30px 10% 40px 10%;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	> address {
+		font-weight: 400;
+		width: 140px;
+		line-height: 19px;
+		font-size: 16px;
+		strong {
+			font-weight: 600;
+		}
+	}
+	> div.footer-social {
+		display: flex;
+		flex-direction: column;
+		> a {
+			margin-bottom: 25px;
+			font-weight: 500;
+		}
+		> div {
+			display: flex;
+			a {
+				display: block;
+				color: black;
+				font-size: 16px;
+				margin-right: 15px;
+				&:last-of-type {
+					margin-right: 0px;
+				}
+			}
+			svg {
+				height: 30px;
+				width: 30px;
+			}
+		}
+	}
+}

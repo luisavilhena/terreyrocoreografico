@@ -1,0 +1,21 @@
+@import './structure.less';
+
+
+header {
+	// padding: 30px 10% 40px 10%;
+	background-color: white;
+	font-family: 'arial', sans-serif;
+	position: fixed;
+	right: 0;
+	width: 100%;
+	z-index: 2;
+
+
+	@media screen and (max-width: @screen-sm)  {
+		padding: 0px;
+		width: 100%;
+		position: fixed;
+		height: 65px;
+		background-color: white;
+	}
+}

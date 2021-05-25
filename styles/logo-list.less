@@ -1,0 +1,26 @@
+.logo-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	.logo-list__item {
+		margin-right: 30px;
+	 	&:last-child {
+	 		margin-right: 0px;
+	 	}
+	}
+}
+
+@media screen and (max-width: @screen-sm) {
+	.logo-list {
+		.logo-list__item {
+			margin-right: 10px;
+			div {
+				img {
+					// height: 50px;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,60 @@
+@import './structure.less';
+
+.carousel {
+	margin: 0 auto 60px auto;
+	// max-width: 900px;
+
+	.slick-list {
+		// border: 2px black solid;
+	
+		.item {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			height: 520px;
+		}
+	}
+	// .slick-dotted.slick-slider {
+	// 	margin-bottom: 60px;
+	// }
+	.slick-next {
+		// right: -38px;
+		// width: auto;
+		// height: auto;
+
+		// &:before {
+		// 	content: url('../resources/icons/tc-arrow.png');
+		// 	height: 20px;	
+		// 	background-repeat: no-repeat;
+		// }
+	}
+}
+
+@media screen and (max-width: @screen-md)  {
+	.carousel {
+		.slick-list {
+			.item {
+				// height: 400px;
+			}
+		}
+		.slick-next {
+			// right: -5px;
+			&:before {
+				// content: url('../resources/icons/arrow-sm.svg');	
+			}
+		}
+	}
+}
+@media screen and (max-width: @screen-sm)  {
+	.carousel {
+		.slick-list {
+			.item {
+				height: 220px;
+			}
+		}
+		.slick-next {
+			&:before {
+			}
+		}
+	}
+}
