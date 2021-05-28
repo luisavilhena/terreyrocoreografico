@@ -1,28 +1,28 @@
 @import './structure.less';
 
 
+h1, h2, h3 {
+	font-family: 'Futura', sans-serif;
+}
+p, a {
+	font-family: 'Arial', sans-serif;
+}
+
 h1 {
- font-size: 90px;
- // font-weight: 700;
- // font-family: 'Barlow', sans-serif;
- // margin-bottom: 60px;
+	font-size: 90px;
+	line-height: 76px;
+	min-height: 18vh;
+	width: 100%;
+	overflow: hidden;
+	color: #FFF;
+	animation: type 1.3s steps(25, end);
 }
-
-h1 { 
-  width: 100%;
-  overflow: hidden;
-  color: #FFF;
-  animation: type 1.3s steps(90, end);
-}
-
-
-
+//animação dos h1
 @keyframes type {
   0% {
     width: 0%;
   }
 }
-
 h2 {
 	font-size: 50px;
 	line-height: 51px;
@@ -31,22 +31,13 @@ h2 {
 
 h3 {
 	font-size: 24px;
-	font-weight:400;
-	margin-bottom: 10px;
-	font-family: 'Barlow', sans-serif;
-	line-height: 28px;
-
 }
 h4 {
 	font-size: 22px;
-	font-weight:400;
-	margin-bottom: 10px;
-	font-family: 'Barlow', sans-serif;
 }
 
 p {
 	font-size: 18px;
-	font-family: 'Barlow', sans-serif;
 	line-height: 22px;
 	margin-bottom: 15px;
 }
@@ -54,14 +45,8 @@ p:last-of-type {
 	margin-bottom: 50px;
 }
 a {
-	// font-family: 'Barlow', sans-serif;
 	color: black;
-	// font-size: 50px;÷
-	// margin-bottom: 10px;
-	// line-height: 22px;
-	// font-weight: 300;
 	&:hover {
-		// color: @yellow;
 	}
 }
 strong {
@@ -76,18 +61,12 @@ blockquote, q, {
 		margin-bottom: 15px; 
 	}
 }
-// iframe {
-// 	width: 100%;
-// }
-
-// strong {
-// 	background-color: @yellow;
-// 	font-weight: 400;
-// }
 
 @media screen and (max-width: @screen-sm) {
 	h1 {
 		font-size: 30px;
+		line-height: 25px;
+		min-height: auto;
 	}
 	h2 {
 		font-size: 20px;

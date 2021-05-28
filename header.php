@@ -36,11 +36,6 @@
     id="main-header"
     class="active"
     data-component="collapsible-header">
-    <a
-      id="logo-anchor"
-      class="header-logo"
-      href="<?php echo get_home_url(); ?>">
-    </a>
 
     <button
       id="mobile-menu-trigger"
