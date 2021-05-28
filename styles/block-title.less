@@ -1,0 +1,43 @@
+.block-title {
+	margin-top: -200px;
+	margin-bottom: 75px;
+	display: flex;
+	flex-direction: column;
+	h1 {
+		line-height: 65px;
+	}
+	.block-title__left {
+		justify-content: flex-start;
+		h1 {
+			text-align: left;
+		}
+	}
+	.block-title__center {
+		justify-content: center;
+		h1 {
+			text-align: center;
+		}
+	}
+	.block-title__right {
+		justify-content: right;
+		h1 {
+			text-align: right;
+		}
+	}
+	.block-title__description {
+		display: flex;
+		justify-content: flex-end;
+		p {
+			max-width: 680px;
+			text-align: right;
+		}
+	}
+}
+@media screen and (max-width: @screen-sm) {
+	.block-title {
+		margin-top: -100px;
+		h1 {
+			line-height: 20px;
+		}
+	}
+}

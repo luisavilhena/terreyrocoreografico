@@ -7,13 +7,28 @@ h1 {
  // font-family: 'Barlow', sans-serif;
  // margin-bottom: 60px;
 }
-h2 {
-	font-size: 30px;
-	font-weight: 500;
-	margin-bottom: 10px;
-	margin-top: 0px;
-	font-family: 'Barlow', sans-serif;
+
+h1 { 
+  width: 100%;
+  overflow: hidden;
+  color: #FFF;
+  animation: type 1.3s steps(90, end);
 }
+
+
+
+@keyframes type {
+  0% {
+    width: 0%;
+  }
+}
+
+h2 {
+	font-size: 50px;
+	line-height: 51px;
+	margin-bottom: 20px;
+}
+
 h3 {
 	font-size: 24px;
 	font-weight:400;
@@ -52,29 +67,14 @@ a {
 strong {
 	font-size: 50px;
 	line-height: 51px;
-	// background-color: @yellow;
-	// width: 100%;
-	// font-weight: 300;
 }
-figure, .wp-block-image {
-	margin-bottom: 50px;
-	margin-top: 50px;
 
-	figcaption {
-		width: 100%;
-		font-size: 18px;
-		font-weight: 300;
-		a {
-			margin-bottom: 0;
-			font-size: 18px;
-			font-weight: 300;
-		}
+blockquote, q, {
+	margin: 0 8%;
+	font-style: italic;
+	p:last-of-type {
+		margin-bottom: 15px; 
 	}
-}
-img {
-	width: 100%;
-	height: auto;
-	box-sizing: border-box;
 }
 // iframe {
 // 	width: 100%;
@@ -90,17 +90,22 @@ img {
 		font-size: 30px;
 	}
 	h2 {
-		font-size: 18px;
+		font-size: 20px;
+		line-height: 21px;
 	}
 	h3 {
 		font-size: 16px;
 		margin-bottom: 3px;
-		line-height: 18px;
+		line-height: 19px;
 	}
 	p {
 		font-size: 16px;
 		line-height: 19px;
 	}
+	strong {
+	font-size: 20px;
+	line-height: 21px;
+}
 	figure, .wp-block-image {
 		margin-bottom: 30px;
 		margin-top: 30px;
@@ -110,9 +115,5 @@ img {
 				font-size: 16px;
 			}
 		}
-	}
-	a {
-		font-size: 30px;
-		// line-height: 17px;
 	}
 }

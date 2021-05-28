@@ -46,29 +46,38 @@ $(document).ready(function(){
 
 	$('.template-tc__title > h1').css("color", colorClick);
 	$('strong').css("color", colorClick);
+	$('h2').css("color", colorClick);
+	$('h1').css("color", colorClick);
 });
-$(document).ready(function(){
-	var colorSelect8 = $('#menu-item-8 > a').css("color")
-	$('#menu-item-8 > a').css("color", "black");
 
-  $('#menu-item-8').hover(function() {
-	  	$('#menu-item-8 > a').css("color", colorSelect8)
-	  }, function() { 
-	  	$('#menu-item-8 > a').css("color", "black")}
-	);
-	//em caso de adicionar submenu
-	///////////////////
-	// if ($('#menu-item-8 > ul > li').hasClass("current_page_item")) {
-	// 	var colorClick8 = $('.current_page_item > a').css("color")
-	// 	$('#menu-item-8 > a').css("color", colorClick8)
-	// 	$('#menu-item-8').hover(function() {
-	// 	  	$('#menu-item-8 > a').css("color", colorSelect8)
-	// 	  }, function() { 
-	// 	  	$('#menu-item-8 > a').css("color", colorClick8)
-	// 	  }
-	// 	);
-	// }
+$(document).ready(function(){
+		var colorSelect = $('#menu-item-125 > a').css("color")
+		$('#menu-item-125 > a').css("color", "black");
+	  $('#menu-item-125').hover(function() {
+		  	$('#menu-item-125 > a').css("color", colorSelect)
+		  }, function() { 
+		  	$('#menu-item-125 > a').css("color", "black")}
+		);
+		var colorClick = $('.current_page_item > a').css("color")
+		if ($('#menu-item-125').hover("current_page_item")) {
+			$('#menu-item-125 > a').css("color", colorClick)
+			$('#menu-item-125').hover(function() {
+			  	$('#menu-item-125 > a').css("color", colorSelect)
+			  }, function() { 
+			  	$('#menu-item-125 > a').css("color", colorClick)
+			  }
+			);
+		} else {
+			$('#menu-item-125 > a').css("color", "black");
+		}
+
+		$('.template-tc__title > h1').css("color", colorClick);
+		$('strong').css("color", colorClick);
+		$('h2').css("color", colorClick);
+		$('h1').css("color", colorClick);
 });
+
+
 $(document).ready(function(){
 	var colorSelect = $('#menu-item-9 > a').css("color")
 	$('#menu-item-9 > a').css("color", "black");
@@ -135,6 +144,11 @@ $(document).ready(function(){
 	}else {
 		$('#menu-item-11 > a').css("color", "black");
 	}
+	$('.template-tc__title > h1').css("color", colorClick);
+	$('strong').css("color", colorClick);
+	$('h2').css("color", colorClick);
+	$('h1').css("color", colorClick);
+	$('.template-tc  a').css("color", colorClick);
 });
 $(document).ready(function(){
 	var colorSelect = $('#menu-item-12 > a').css("color")
@@ -202,6 +216,19 @@ $(document).ready(function(){
 		$('#menu-item-14 > a').css("color", "black");
 	}
 });
+
+// $(document).ready(function(){
+// 	var i = setInterval(function () {
+	    
+// 	    clearInterval(i);
+	  
+// 	    // O código desejado é apenas isto:
+// 	    document.getElementById("loading").style.display = "none";
+// 	    document.getElementById("template").style.display = "inline";
+
+// 	}, 4000);
+// });
+
 
 //home
 

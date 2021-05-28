@@ -20,10 +20,12 @@ add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
     Container::make( 'theme_options', __( 'Theme Options', 'crb' ) )
         ->add_fields( array(
-            Field::make( 'rich_text', 'address', 'Endereço' ),
             Field::make( 'text', 'email', 'E-mail' ),
             Field::make( 'text', 'facebook', 'Facebook' ),
             Field::make( 'text', 'instagram', 'Instagram' ),
+            Field::make( 'text', 'vimeo', 'Vimeo' ),
+            Field::make( 'text', 'spotifty', 'Spotify' ),
+            Field::make( 'text', 'youtube', 'Youtube' ),
         ) );
 }
 
