@@ -22,10 +22,16 @@ header {
 }
 #logo-anchor {
 	position: fixed;
-	left: 9%;
-	top: 40px;
+	right: 2.7%;
+	top: 16px;
 	z-index: 10;
 	img {
 		width: 70px;
+	}
+	@media screen and (max-width: @screen-sm)  {
+		top: 9px;
+		img {
+			width: 45px;
+		}
 	}
 }
