@@ -240,6 +240,7 @@ ul#main-menu > li > a:after {
     z-index: 100;
     top: 13px;
     right: 42.7%;
+    transition: right 0.6s;
     height: 36px;
     cursor: pointer;
   }
@@ -256,12 +257,24 @@ ul#main-menu > li > a:after {
     display: flex;
     flex-direction: column;
   }
+  #mobile-menu-trigger > div:nth-child(1) {
+    transition: margin-right 0.6s;
+    margin-right: 0px;
+  }
   #mobile-menu-trigger > div:nth-child(2) {
     transition: margin-left 0.6s;
     margin-left: 0px;
   }
+  .menu-open #mobile-menu-trigger {
+    right: 41.5%;
+    transition: right 0.6s;
+  }
+  .menu-open #mobile-menu-trigger div:nth-child(1) {
+    margin-right: 4px;
+    transition: margin-right 0.6s;
+  }
   .menu-open #mobile-menu-trigger div:nth-child(2) {
-    margin-left: 8px;
+    margin-left: 4px;
     transition: margin-left 0.6s;
   }
   .menu-open ul#main-menu {
