@@ -22,12 +22,12 @@ function tc_gallery () {
  
 			<div class="gallery">
 				<div class="gallery__destak">
-					<img src="<?php echo wp_get_attachment_image_src($block['img'],'ap_image_desktop_full_no_crop')[0]; ?>">
+					<img src="<?php echo wp_get_attachment_image_src($block['img'],'ap_carousel_image_desktop_full_no_crop')[0]; ?>">
 				</div>
 				<div class="gallery__items">
 				<?php foreach ($block['galeria'] as $galeria) : ?>
 				<?php if ($galeria['img_item']) : ?>
-					<img src="<?php echo wp_get_attachment_image_src($galeria['img_item'],'ap_image_desktop_full_no_crop')[0]; ?>">
+					<img src="<?php echo wp_get_attachment_image_src($galeria['img_item'],'ap_carousel_image_desktop_full_no_crop')[0]; ?>">
 				<?php endif; ?>
 				<?php endforeach;  ?>
 				</div>
