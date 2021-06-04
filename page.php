@@ -14,9 +14,9 @@ get_header(); ?>
 
 <main id="template"class="template-tc">
 	<div class="template-tc__header">
-		<img class=""
-    src="<?php echo get_template_directory_uri() ?>/resources/icons/tc-arrow.png"/>
-
+    <a href = "javascript:history.back()">
+      <img src="<?php echo get_template_directory_uri() ?>/resources/icons/tc-arrow.png"/>
+    </a>
 	</div>
 	<?php the_content(); ?>
 

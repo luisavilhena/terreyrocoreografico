@@ -69,6 +69,11 @@ function support_thumbnails() {
 
 add_action('after_setup_theme', 'support_thumbnails'); // carrega parametros de suporte do tema
 
+//////////
+//excerpt//
+///////////
+add_post_type_support( 'page', 'excerpt' );
+
 
 
 

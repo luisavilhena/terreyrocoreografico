@@ -19,7 +19,7 @@ function tc_title_img() {
 			// ob_start();
 			?>
  			<div class="title-image">
- 				<a traget="_blank" href="<?php echo  $block['link']; ?>">
+ 				<a target="_blank" href="<?php echo  $block['link']; ?>">
  					<div>
  						<img src="<?php echo wp_get_attachment_image_src($block['img'], "ap_carousel_image_desktop_full_no_crop")[0]; ?>">
  					</div>

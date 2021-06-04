@@ -17,6 +17,7 @@ function casa_do_estudante_carousel() {
 			  ->add_fields(array(
 			    Field::make('image', 'img', 'Imagem')
 			  ))
+			  ->set_layout('tabbed-vertical')
 		) )
 		->set_render_callback( function ( $block ) {
  

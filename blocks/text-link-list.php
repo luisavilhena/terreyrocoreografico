@@ -25,7 +25,7 @@ function tc_text_link_list() {
 			<div class="link-list">
 				<?php foreach ($block['links'] as $links) : ?>
 				<div class="link-list__item">
-					<a style="color:<?php echo $block['color-link']; ?> " target="_blank" href="<?php echo $links['link']; ?>">
+					<a style="color:<?php echo $block['color-link']; ?> " href="<?php echo $links['link']; ?>">
 						<h3 style="color:<?php echo $links['color-text']; ?> "><?php echo $links['text']; ?></h3>
 						<?php echo $links['text-link']; ?>
 					</a>
