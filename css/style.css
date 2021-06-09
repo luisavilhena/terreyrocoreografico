@@ -598,6 +598,7 @@ header {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .gallery .gallery__items img {
   cursor: pointer;
