@@ -263,10 +263,19 @@ $(document).ready(function(){
 	// destak.attr('src', firstphoto.currentTarget.currentSrc)
 
 	photo.on('click', function(event){
-		console.log(event.currentTarget.currentSrc)
 		destak.attr('src', event.currentTarget.currentSrc)
+
 	});
 
+});
+
+$(document).ready(function(){
+  $('.gallery > .gallery__items > img').on('click', function(event) {
+    $('html, body').animate({
+      scrollTop: $('#gallery').offset().top - 100
+    }, 500, function(){
+    });
+  });
 });
 
 

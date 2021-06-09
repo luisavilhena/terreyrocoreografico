@@ -1,6 +1,7 @@
 <?php
 add_image_size('ap_carousel_image_desktop_full_no_crop', 800 , 480, false);
 add_image_size('ap_image_desktop_full_no_crop', 1000 , 700, false);
+add_image_size('ap_image_2_desktop_full_no_crop', 1100 , 1100, false);
 add_image_size('ap_carousel_image_desktop_miniature_no_crop', 36, 32, false);
 add_image_size('cc__thumbnail_a4_vertical_no_crop', 420, 560, false);
 add_image_size('cc__thumbnail_a4_horizontal_crop', 560, 420, array('center', 'center'));
@@ -8,9 +9,9 @@ add_image_size('cc__thumbnail_a4_horizontal_crop', 560, 420, array('center', 'ce
 use Carbon_Fields\Block;
 use Carbon_Fields\Field;
  
-add_action( 'after_setup_theme', 'casa-do-estudante' );
+add_action( 'after_setup_theme', 'tc' );
  
-function casa_do_estudante_carousel() {
+function tc_carousel() {
 	Block::make( 'Carrossel' )
 		->add_fields( array(
 			Field::make('complex', 'carousel', 'Carrossel')
@@ -38,4 +39,4 @@ function casa_do_estudante_carousel() {
 			// return ob_get_flush();
 		} );
 }
-add_action( 'carbon_fields_register_fields', 'casa_do_estudante_carousel' );
+add_action( 'carbon_fields_register_fields', 'tc_carousel' );

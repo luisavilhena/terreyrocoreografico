@@ -75,6 +75,17 @@ add_action('after_setup_theme', 'support_thumbnails'); // carrega parametros de 
 add_post_type_support( 'page', 'excerpt' );
 
 
+////////
+//vcard///
+///////////
+function _thz_enable_vcard_upload( $mime_types ){
+    $mime_types['vcf'] = 'text/vcard';
+    $mime_types['vcard'] = 'text/vcard';
+    return $mime_types;
+}
+add_filter('upload_mimes', '_thz_enable_vcard_upload' );
+
+
 
 
 
