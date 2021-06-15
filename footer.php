@@ -11,9 +11,6 @@
 				<a target="_blank" href="<?php echo carbon_get_theme_option('youtube'); ?>">
 					<?php require('resources/icons/youtube.svg'); ?>
 				</a>
-				<a target="_blank" href="<?php echo carbon_get_theme_option('vimeo'); ?>">
-					<?php require('resources/icons/vimeo.svg'); ?>
-				</a>
 				<a target="_blank" href="<?php echo carbon_get_theme_option('spotify'); ?>">
 					<?php require('resources/icons/spotify.svg'); ?>
 				</a>

@@ -16,7 +16,7 @@ function tc_block_title() {
 			Field::make( 'text', 'color_1', 'Cor do título à esquerda 1' ),
 			Field::make( 'text', 'title_left_2', 'Título à esquerda 2' ),
 			Field::make( 'text', 'color_2', 'Cor do título à esquerda 2' ),
-			Field::make( 'text', 'title_center', 'Título centralizado' ),
+			Field::make( 'rich_text', 'title_center', 'Título centralizado' ),
 			Field::make( 'text', 'color_3', 'Cor do título centralizado' ),
 			Field::make( 'text', 'title_right', 'Título à direita' ),
 			Field::make( 'text', 'color_4', 'Cor do título à direita' ),

@@ -10,7 +10,7 @@ p, a {
 
 h1 {
 	font-size: 90px;
-	line-height: 76px;
+	line-height: 89px;
 	min-height: 18vh;
 	width: 100%;
 	// overflow: hidden;
@@ -26,7 +26,7 @@ h1 {
 }
 h2 {
 	font-size: 50px;
-	line-height: 51px;
+	line-height: 50px;
 	margin-bottom: 20px;
 }
 
@@ -38,8 +38,8 @@ h4 {
 }
 
 p {
-	font-size: 18px;
-	line-height: 22px;
+	font-size: 16px;
+	line-height: 18px;
 	margin-bottom: 15px;
 }
 p:last-of-type {
@@ -62,6 +62,14 @@ blockquote, q, {
 		margin-bottom: 15px; 
 	}
 }
+//estilo especial para texto corrido em uma coluna só
+.template-tc {
+	> p, > h2 {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 900px;
+	}
+}
 
 @media screen and (max-width: @screen-sm) {
 	h1 {
@@ -79,8 +87,8 @@ blockquote, q, {
 		line-height: 19px;
 	}
 	p {
-		font-size: 16px;
-		line-height: 19px;
+		font-size: 14px;
+		line-height: 16px;
 	}
 	strong {
 	font-size: 20px;

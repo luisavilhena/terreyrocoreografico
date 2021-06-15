@@ -139,6 +139,11 @@ table {
 .home-template .home-template__img img {
   margin-top: 100px;
 }
+.home-template-logo {
+  width: 70px;
+  margin: 0px auto -90px auto;
+  display: block;
+}
 ul#main-menu {
   padding: 30px 10% 0px 10%;
   display: flex;
@@ -283,6 +288,13 @@ ul#main-menu > li > a:after {
 }
 .wp-block-embed iframe {
   width: 100%;
+  height: 310px;
+}
+@media screen and (max-width: 580px) {
+  .wp-block-embed iframe {
+    width: 100%;
+    height: 220px;
+  }
 }
 figure,
 .wp-block-image {
@@ -364,7 +376,7 @@ a {
 }
 h1 {
   font-size: 90px;
-  line-height: 76px;
+  line-height: 89px;
   min-height: 18vh;
   width: 100%;
   color: #FFF;
@@ -378,7 +390,7 @@ h1 {
 }
 h2 {
   font-size: 50px;
-  line-height: 51px;
+  line-height: 50px;
   margin-bottom: 20px;
 }
 h3 {
@@ -388,8 +400,8 @@ h4 {
   font-size: 22px;
 }
 p {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 18px;
   margin-bottom: 15px;
 }
 p:last-of-type {
@@ -411,6 +423,12 @@ blockquote p:last-of-type,
 q p:last-of-type {
   margin-bottom: 15px;
 }
+.template-tc > p,
+.template-tc > h2 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+}
 @media screen and (max-width: 580px) {
   h1 {
     font-size: 30px;
@@ -427,8 +445,8 @@ q p:last-of-type {
     line-height: 19px;
   }
   p {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 16px;
   }
   strong {
     font-size: 20px;
@@ -463,6 +481,10 @@ q p:last-of-type {
 .structure-text-left {
   text-align: left !important;
 }
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .title-image {
   margin-bottom: 60px;
 }
@@ -481,9 +503,11 @@ q p:last-of-type {
   display: flex;
   flex-direction: column;
 }
+.block-title h2 {
+  margin-bottom: 0px;
+}
 .block-title h1 {
-  margin-top: -44px;
-  line-height: 90px;
+  line-height: 85px;
   min-height: auto;
   text-transform: none;
 }
@@ -523,7 +547,7 @@ q p:last-of-type {
   }
 }
 .link-list {
-  margin-right: -5%;
+  margin-right: -13%;
 }
 .link-list .link-list__item {
   margin-bottom: 15px;
@@ -534,7 +558,7 @@ q p:last-of-type {
 }
 .link-list .link-list__item a {
   display: flex;
-  justify-content: safe flex-end;
+  justify-content: flex-end;
   align-items: center;
   text-decoration: none;
   font-size: 24px;
@@ -590,25 +614,41 @@ header {
 .gallery {
   display: flex;
   flex-direction: column;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .gallery .gallery__destak {
   margin-bottom: 2px;
 }
 .gallery .gallery__items {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: flex-start;
+  align-content: flex-start;
 }
 .gallery .gallery__items img {
   cursor: pointer;
-  width: 178px;
-  margin-right: 2px;
+  width: 148px;
+  height: auto;
+  margin-right: 2.3px;
   margin-bottom: 2px;
+}
+.gallery .gallery__items img:nth-of-type(6n) {
+  margin-right: 0px;
 }
 @media screen and (max-width: 580px) {
   .gallery .gallery__items img {
     width: 94px;
+    margin-right: 2px;
+  }
+  .gallery .gallery__items img:nth-of-type(4n) {
+    margin-right: 0px;
+  }
+  .gallery .gallery__items img:nth-of-type(6n) {
+    margin-right: 2px;
   }
 }
 footer {
@@ -626,6 +666,7 @@ footer > div.footer-social > a {
   margin-bottom: 15px;
   font-weight: 500;
   color: black !important;
+  font-size: 14px;
 }
 footer > div.footer-social > div.footer-social__icons {
   display: flex;
@@ -665,7 +706,7 @@ footer > div.footer-social > .footer-social__text a {
   color: black !important;
   margin-bottom: 0px;
   margin-right: 3px;
-  font-size: 14px;
+  font-size: 12px;
 }
 @media screen and (max-width: 580px) {
   footer > div.footer-social > .footer-social__text p,

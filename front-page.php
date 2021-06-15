@@ -10,6 +10,8 @@ get_header(); ?>
 	  />
 	</div>
 </main>
+<img class="home-template-logo" src="<?php echo get_template_directory_uri() ?>/resources/img/logo-menor-terreyro.png"
+/>
 
 <?php endwhile; ?>
 
