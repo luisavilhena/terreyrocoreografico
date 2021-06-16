@@ -40,7 +40,9 @@ function tc_block_title() {
 				<?php endif;  ?>
 				<?php if($block['title_center']) : ?>
 				<div class="block-title__center">
-					<h1 style="color: <?php echo $block['color_3']; ?>"><?php echo  $block['title_center']; ?></h1>
+					<div style="color: <?php echo $block['color_3']; ?>">
+						<?php echo  $block['title_center']; ?>
+					</div>
 				</div>
 				<?php endif;  ?>
 				<?php if($block['title_right']) : ?>
