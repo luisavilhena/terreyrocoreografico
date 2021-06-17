@@ -20,7 +20,7 @@ function tc_block_title() {
 			Field::make( 'text', 'color_3', 'Cor do título centralizado' ),
 			Field::make( 'text', 'title_right', 'Título à direita' ),
 			Field::make( 'text', 'color_4', 'Cor do título à direita' ),
-			Field::make( 'textarea', 'text', 'Descrição' ),
+			Field::make( 'rich_text', 'text', 'Descrição' ),
 
 		) )
 		->set_render_callback( function ( $block ) {

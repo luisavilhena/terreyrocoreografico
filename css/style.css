@@ -383,6 +383,14 @@ h1 {
   text-transform: uppercase;
   animation: type 1.3s steps(25, end);
 }
+h4 {
+  font-size: 65px;
+  line-height: 64px;
+  width: 100%;
+  color: #FFF;
+  text-transform: uppercase;
+  animation: type 1.3s steps(25, end);
+}
 @keyframes type {
   0% {
     width: 0%;
@@ -395,9 +403,6 @@ h2 {
 }
 h3 {
   font-size: 24px;
-}
-h4 {
-  font-size: 22px;
 }
 p {
   font-size: 16px;
@@ -416,7 +421,7 @@ strong {
 }
 blockquote,
 q {
-  margin: 0 8%;
+  margin: 0px 8% 30px 8%;
   font-style: italic;
 }
 blockquote p:last-of-type,
@@ -507,7 +512,14 @@ body {
   margin-bottom: 0px;
 }
 .block-title h1 {
+  margin-bottom: 0px !important;
   line-height: 85px;
+  min-height: auto;
+  text-transform: none;
+}
+.block-title h4 {
+  line-height: 65px;
+  margin-bottom: 0px !important;
   min-height: auto;
   text-transform: none;
 }
@@ -535,9 +547,16 @@ body {
 }
 .block-title .block-title__description {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 .block-title .block-title__description p {
+  max-width: 680px;
+  text-align: right;
+}
+.block-title .block-title__description p:last-of-type {
+  margin-bottom: 0px;
   max-width: 680px;
   text-align: right;
 }
