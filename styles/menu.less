@@ -15,14 +15,14 @@ ul#main-menu {
 		}
 	}
 	> li {
-		padding: 10px 30px 30px 20px;
+		padding: 10px 50px 30px 0px;
 
 		> a  {
 			position: relative;
 		}
 
 		> ul.sub-menu {
-			margin-top: 35px;
+			margin-top: 25px;
 			background-color: white;
 			flex-direction: row;
 			justify-content: flex-end;
@@ -32,9 +32,14 @@ ul#main-menu {
 			flex-wrap: wrap;
 			align-items: center;
 			right: 10%;
-			left:10%;
+			left:6%;
 			> li {
 				padding: 20px 0px 20px 20px;
+			}
+			> li:hover {
+				a {
+					text-decoration: underline;
+				}
 			}
 		}
 		&:nth-of-type(2) {

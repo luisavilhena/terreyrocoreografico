@@ -161,13 +161,13 @@ ul#main-menu li a {
   text-transform: capitalize;
 }
 ul#main-menu > li {
-  padding: 10px 30px 30px 20px;
+  padding: 10px 50px 30px 0px;
 }
 ul#main-menu > li > a {
   position: relative;
 }
 ul#main-menu > li > ul.sub-menu {
-  margin-top: 35px;
+  margin-top: 25px;
   background-color: white;
   flex-direction: row;
   justify-content: flex-end;
@@ -177,10 +177,13 @@ ul#main-menu > li > ul.sub-menu {
   flex-wrap: wrap;
   align-items: center;
   right: 10%;
-  left: 10%;
+  left: 6%;
 }
 ul#main-menu > li > ul.sub-menu > li {
   padding: 20px 0px 20px 20px;
+}
+ul#main-menu > li > ul.sub-menu > li:hover a {
+  text-decoration: underline;
 }
 ul#main-menu > li:nth-of-type(2) > a:after {
   display: none;
@@ -429,7 +432,8 @@ q p:last-of-type {
   margin-bottom: 15px;
 }
 .template-tc > p,
-.template-tc > h2 {
+.template-tc > h2,
+.template-tc > blockquote {
   margin-right: auto;
   margin-left: auto;
   max-width: 900px;
@@ -744,11 +748,67 @@ footer > div.footer-social > .footer-social__text a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 340px;
+  height: 407px;
+}
+.caroussel-popup {
+  display: none;
+  margin: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgba(152, 152, 152, 0.5);
+}
+.caroussel-popup .caroussel-popup__image {
+  width: 866px;
+  height: 650px;
+  margin: 100px auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.caroussel-popup__close {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  right: 10%;
+  z-index: 1000;
+  height: 22px;
+  padding-top: 18px;
+  border: 1px solid black;
+  background-color: white;
+  top: 50px;
+  width: 36px;
+  padding-right: 5px;
+}
+.caroussel-popup__close span {
+  display: block;
+  margin-bottom: 3px;
+  height: 4px;
+  width: 30px;
+  background-color: black;
+}
+.caroussel-popup__close span:first-of-type {
+  transform: rotate(45deg);
+}
+.caroussel-popup__close span:last-of-type {
+  margin-top: -6px;
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 580px) {
+  .caroussel-popup .caroussel-popup__image {
+    width: 350px;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 580px) {
   .carousel .slick-list .item {
-    height: 220px;
+    height: 256px;
   }
 }
 form.wpcf7-form {

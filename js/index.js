@@ -9,18 +9,43 @@ menuButtonClose.addEventListener('click', menuButtonOpen)
 function menuButtonOpen() {
 	mainHeader.classList.toggle("menu-open")
 }
-
+//CARROSSEL
 $(document).ready(function(){
 	  $('.carousel').slick({
 		  slidesToShow: 1,
 		  slidesToScroll: 1,
 		  autoplay: true,
 		  autoplaySpeed: 3000,
-		  // dots: true,
+		  dots: true,
 		  adaptiveHeight: true,
 		  // variableWidth: true,
 	  });
 	});
+
+$(document).ready(function(){
+	var item = $('.carousel  .slick-list  .item')
+	var carouselPopup = $('.caroussel-popup')
+	var carouselPopupImage = $('.caroussel-popup__image')
+	var carouselPopupClose = $('.caroussel-popup__close')
+
+
+
+	item.on('click', function(event){
+		// $(carouselPopup).show()
+		var itemClicked = event.currentTarget
+		var imageCliked = $(itemClicked).css('background-image')
+		console.log(imageCliked)
+		$(carouselPopup).css("display", "block")
+		$(carouselPopupClose).css("display", "flex")
+		$(carouselPopupImage).css("background-image", imageCliked)
+
+		carouselPopupClose.on('click', function(event){
+			$(carouselPopup).css("display", "none")
+			$(carouselPopupClose).css("display", "none")
+		});
+	});
+
+});
 
 //menu
 $(document).ready(function(){
@@ -255,7 +280,7 @@ $(document).ready(function(){
 		$('#menu-item-14 > a').css("color", "black");
 	}
 });
-
+//GALLERY
 $(document).ready(function(){
 	var photo = $('.gallery > .gallery__items > img')
 	var destak = $('.gallery > .gallery__destak > img')

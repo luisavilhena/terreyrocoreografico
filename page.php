@@ -21,6 +21,13 @@ get_header(); ?>
 	<?php the_content(); ?>
 
 </main>
+<div class="caroussel-popup">
+  <div class="caroussel-popup__image"></div>
+</div>
+<div class="caroussel-popup__close">
+  <span></span>
+  <span></span>
+</div>
 <?php endwhile; ?>
 
 <?php
