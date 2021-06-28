@@ -370,7 +370,8 @@ img {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Futura', sans-serif;
 }
 p,
@@ -468,11 +469,11 @@ q p:last-of-type {
   }
   figure figcaption,
   .wp-block-image figcaption {
-    font-size: 16px;
+    font-size: 12px;
   }
   figure figcaption a,
   .wp-block-image figcaption a {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 @font-face {
