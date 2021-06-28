@@ -185,9 +185,6 @@ ul#main-menu > li > ul.sub-menu > li {
 ul#main-menu > li > ul.sub-menu > li:hover a {
   text-decoration: underline;
 }
-ul#main-menu > li:nth-of-type(2) > a:after {
-  display: none;
-}
 ul#main-menu > li:nth-of-type(1) {
   position: relative;
 }
